@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#include "../../tools/status.h"
+#include "status.h"
 
 #define LAST_ITEM_INDEX (-1)
 

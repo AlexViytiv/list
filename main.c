@@ -1,7 +1,7 @@
 #include "stdio.h"
 
-#include "./containers/list/list.h"
-#include "./tools/logger.h"
+#include "list.h"
+#include "logger.h"
 
 int main(int argc, char * argv[])
 {
@@ -41,7 +41,6 @@ int main(int argc, char * argv[])
         LOG_ERR("Failed to print list. Error code: %u [%s].", status, status_to_str(status));
         goto out;
     }
-
 
 out:
     return (int)status;
