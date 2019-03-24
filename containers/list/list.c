@@ -201,11 +201,13 @@ status_code_t list_print(list_t * list)
         goto out;
     }
 
+    LOG_MSG("List:\n");
     curr_item = list->head;
     while(curr_item != NULL) {
         printf(" %du ->", curr_item->value);
         curr_item = curr_item->next;
     }
+    printf("\n\n");
 
 out:
     return status;
